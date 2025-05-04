@@ -1,47 +1,170 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibeSpace</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <section class="leftnavside" id="leftnavside">
-        <div class="logo_div" id="logo_div">
-            <img src="assets/images/VB.png" alt="VB logo" style="width: 100px;">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Suggested Posts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+  </style>
+ </head>
+ <body class="bg-black text-white font-[Roboto Mono] min-h-screen flex">
+  <!-- Left Sidebar - fixed to left -->
+  <aside
+    class="fixed top-0 left-0 h-full w-48 border-r border-gray-700 flex flex-col justify-between py-6 px-4 z-20 bg-black"
+  >
+    <div>
+      <div class="text-xs font-extrabold mb-12">LOGO HERE</div>
+      <nav class="space-y-6 text-gray-400 text-[11px]">
+        <a class="flex items-center space-x-3 group" href="#">
+          <i class="fas fa-home text-white text-lg w-6"></i>
+          <span>Home</span>
+        </a>
+        <a class="flex items-center space-x-3 group" href="#">
+          <i class="fas fa-search text-lg w-6"></i>
+          <span>Explore</span>
+        </a>
+        <a class="flex items-center space-x-3 group" href="#">
+          <i class="fas fa-map-marked-alt text-lg w-6"></i>
+          <span>Maps</span>
+        </a>
+        <a class="flex items-center space-x-3 group" href="#">
+          <i class="fas fa-plus text-lg w-6"></i>
+          <span>Create</span>
+        </a>
+      </nav>
+    </div>
+    <div class="space-y-6 text-gray-400 text-[11px]">
+      <a class="flex items-center space-x-3 group" href="#">
+        <i class="fas fa-user-circle text-blue-700 text-xl w-6"></i>
+        <span>Profile</span>
+      </a>
+      <a class="flex items-center space-x-3 group" href="#">
+        <i class="fas fa-bars text-lg w-6"></i>
+        <span>More</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content - centered with margin left for fixed sidebar -->
+  <main
+    class="flex-1 flex flex-col items-center py-8 px-6 max-w-[720px] mx-auto"
+    style="margin-left: 12rem;"
+  >
+    <!-- Suggested posts title above post container -->
+    <h2 class="text-xs text-white mb-6 select-none">suggested posts</h2>
+
+    <!-- Post container -->
+    <div class="relative bg-black max-w-[480px] w-full">
+      <!-- Username top left above image -->
+      <div class="absolute top-2 left-2 text-[11px] text-white font-normal z-10 select-none">
+        anonymous user 007
+      </div>
+
+      <!-- Three dots top right above image -->
+      <button
+        aria-label="More options"
+        class="absolute top-2 right-2 text-gray-400 hover:text-white text-xl z-10"
+      >
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+
+      <img
+        alt="Garbage bin with goats and trash around in an urban area"
+        class="w-full h-[455px] object-cover"
+        height="455"
+        src="https://storage.googleapis.com/a1aa/image/bdced8f3-2585-4121-f39b-aadf47e40d70.jpg"
+        width="480"
+      />
+
+      <div
+        class="flex justify-between text-white text-[11px] mt-4 mb-2 w-full"
+      >
+        <div class="flex space-x-5">
+          <i class="far fa-heart cursor-pointer text-lg"></i>
+          <i class="far fa-comment cursor-pointer text-lg"></i>
         </div>
-        <div class="nav_hero" id="nav_hero">
-            <ul class="nav_links" id="nav_links">
-                <li class="nav_links" id="nav_links"><a href="#">Home</a></li>
-                <li class="nav_links" id="nav_links"><a href="#">Explore</a></li>
-                <li class="nav_links" id="nav_links"><a href="#">Maps</a></li>
-                <li class="nav_links" id="nav_links"><a href="#">About</a></li>
-            </ul>
-        </div>
-        <div class="profile_div" id="profile_div">
-            <ul class="nav_links" id="nav_links">
-                <li class="nav_links" id="nav_links"><a href="#">Profile</a></li>
-            </ul>
-        </div>
-    </section>
-    <section class="mainsection" id="mainsection">
-        <div class="mainsectionheading">
-            <h1>Suggested Posts</h1>
-        </div>
-        <div class="postarea" id="postarea">
-            <div class="post-header">
-                <div class="userlogo" id="userlogo">| | | |</div>
-                <div class="morebut" id="morebut">...</div>
-            </div>
-            <div class="user-image-posted" id="user-image-posted">
-                <img src="assets/images/posted image.png" alt=""User-image>
-            </div>
-            <div class="post-icon" id="post-icon">
-                <p>like</p>
-                <p>Comment</p>
-            </div>
-        </div>
-    </section>
-</body>
+        <i class="far fa-bookmark cursor-pointer text-lg"></i>
+      </div>
+
+      <div class="text-[10px] w-full text-white">
+        <span class="font-bold">1,069 upvotes</span>
+        <span>
+          terryluces
+          <span>
+            There has been more drainage problems around this area.. locals are
+            coe
+            <span class="underline cursor-pointer">more</span>
+          </span>
+        </span>
+      </div>
+
+      <div class="text-[8px] w-full text-gray-600 mb-4">View all 100 comments</div>
+      <div class="text-[8px] w-full text-gray-600 mb-4">1 HOUR AGO</div>
+
+      <div class="flex items-center w-full space-x-3 text-gray-600 text-[11px]">
+        <i class="far fa-smile text-lg"></i>
+        <input
+          class="bg-transparent border-b border-gray-600 focus:outline-none flex-1 text-[11px] text-white placeholder-gray-600"
+          placeholder="Add a comment..."
+          type="text"
+        />
+        <button class="text-blue-900 text-[11px] font-semibold">Post</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Right Sidebar - location buttons fixed right -->
+  <aside
+    class="fixed top-0 right-0 h-full w-56 border-l border-gray-700 py-8 px-6 flex flex-col items-start bg-black text-white text-[16px] space-y-6"
+  >
+    <h3 class="mb-8 font-normal">Districts</h3>
+    <button
+      class="w-full text-left italic font-light text-[14px] hover:text-blue-600 focus:text-blue-600"
+      type="button"
+    >
+      Chennai
+    </button>
+    <button
+      class="w-full text-left italic font-light text-[14px] hover:text-blue-600 focus:text-blue-600"
+      type="button"
+    >
+      Chengalpattu
+    </button>
+    <button
+      class="w-full text-left italic font-light text-[14px] hover:text-blue-600 focus:text-blue-600"
+      type="button"
+    >
+      Thiruvallur
+    </button>
+    <button
+      class="w-full text-left italic font-light text-[14px] hover:text-blue-600 focus:text-blue-600"
+      type="button"
+    >
+      Theni
+    </button>
+    <button
+      class="w-full text-left italic font-light text-[14px] hover:text-blue-600 focus:text-blue-600"
+      type="button"
+    >
+      Thanjavur
+    </button>
+    <button
+      class="w-full text-left italic font-light text-[14px] hover:text-blue-600 focus:text-blue-600"
+      type="button"
+    >
+      Namakkal
+    </button>
+    <button
+      class="w-full text-left italic font-light text-[14px] hover:text-blue-600 focus:text-blue-600"
+      type="button"
+    >
+      puducherry
+    </button>
+  </aside>
+ </body>
 </html>
